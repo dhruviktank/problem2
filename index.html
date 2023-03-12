@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <img src="logo.png" height="" width="100" alt=""><span style="color: white;font-size: larger;">Mountain
+                Sleet</span>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <ul class="nav-list-container">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <img class="searchimg" src="Search.png" height="25" alt="">
+                <input class="searchinput" type="text" placeholder="Search" name="" id="">
+            </div>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="quote-container">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <p style="font-size: large;margin-top: 10px;">"Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Unde eum
+                    deserunt
+                    nulla officiis quas,
+                    illolaudantium harum omnis fugit voluptatibus."</p>
+                <p style="font-size: large;margin-top: 10px;">-QUOTES-</p>
+            </div>
+            <div class="container-right">
+                <img src="Mountain.png" alt="">
+                <p style="font-size: 5rem;">HIKE MORE</p>
+                <p style="font-size: 32px;"><svg width="30" height="10">
+                        <line x1="0" y1="5" x2="30" y2="5" style="stroke: white;stroke-width:2" />
+                    </svg> Worry less <svg width="30" height="10">
+                        <line x1="0" y1="5" x2="30" y2="5" style="stroke: white;stroke-width:2" />
+                    </svg></p>
+                <p style="font-size: large;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus
+                    harum soluta. Asperiores,
+                    deserunt!"</p>
+                <button
+                    style="background-color: transparent;padding: 5px 10px;color: white;border: 2px solid white;border-radius: 20px;margin: 10px;">Learn
+                    More</button>
+            </div>
+        </div>
+    </section>
+    <div class="splash1"><img src="splash3.png" alt=""></div>
+    <section class="about">
+        <div class="about-container">
+            <div class="text1">
+                <p>1000+ Route. 1 Million Hikers. <br>
+                    Memorable Memories</p>
+            </div>
+            <div>
+                <p class="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel alias, labore quisquam
+                    praesentium at
+                    nostrum ullam itaque eligendi.</p>
+            </div>
+        </div>
+    </section>
+    <section class="packages">
+        <h2>Choose Your Level</h2>
+        <div class="package-container">
+            <div class="package">
+                <p>Beginner</p>
+                <svg width="200" height="10">
+                    <line x1="0" y1="5" x2="200" y2="5" style="stroke: black;stroke-width:2" />
+                </svg>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos totam ab itaque, esse adipisci qui.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="package">
+                <p>Experienced</p>
+                <svg width="200" height="10">
+                    <line x1="0" y1="5" x2="200" y2="5" style="stroke: black;stroke-width:2" />
+                </svg>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos totam ab itaque, esse adipisci qui.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="package">
+                <p>Expert</p>
+                <svg width="200" height="10">
+                    <line x1="0" y1="5" x2="200" y2="5" style="stroke: black;stroke-width:2" />
+                </svg>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos totam ab itaque, esse adipisci qui.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        var ham = document.getElementsByClassName('ham')[0];
+        ham.addEventListener('click', function () {
+            document.getElementsByClassName('nav-list')[0].classList.toggle('activeMenu')
+            ham.classList.toggle('activeHam')
+        })
+    </script>
+</body>
+</html>
